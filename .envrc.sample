@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -a
+
+use nix
+mkdir -p "${TMPDIR}" 2>/dev/null || true

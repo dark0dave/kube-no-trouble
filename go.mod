@@ -1,4 +1,4 @@
-module github.com/doitintl/kube-no-trouble
+module github.com/dark0dave/kube-no-trouble
 
 go 1.23.0
 

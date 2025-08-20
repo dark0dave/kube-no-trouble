@@ -8,7 +8,6 @@ updates:
     commit-message:
       prefix: "dep: Go "
     reviewers:
-      - "migueldelucasdoit"
       - "dark0dave"
 
   - package-ecosystem: "docker"
@@ -19,5 +18,4 @@ updates:
     commit-message:
       prefix: "dep: Docker "
     reviewers:
-      - "migueldelucasdoit"
       - "dark0dave"

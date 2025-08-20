@@ -2,7 +2,7 @@
 # https://git-cliff.org/docs/configuration
 # Remote for git-cliff
 [remote.github]
-owner = "doitintl"
+owner = "dark0dave"
 repo = "kube-no-trouble"
 [changelog]
 # changelog header
@@ -10,7 +10,7 @@ header = ""
 # template for the changelog body
 # https://tera.netlify.app/docs
 body = """
-**Docker Image**: {{ get_env(name='REGISTRY', default='ghcr.io/doitintl') }}/{{ get_env(name='IMAG_NAME', default='kube-no-trouble') }}:{{ get_env(name='GITHUB_REF_NAME', default='latest') }}
+**Docker Image**: {{ get_env(name='REGISTRY', default='ghcr.io/dark0dave') }}/{{ get_env(name='IMAG_NAME', default='kube-no-trouble') }}:{{ get_env(name='GITHUB_REF_NAME', default='latest') }}
 
 ### Changelog \
 {% for group, commits in commits | group_by(attribute="group") %}

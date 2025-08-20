@@ -135,7 +135,7 @@ Consistency is the most important. Following the existing style, formatting, and
 
 For example, if all private properties are prefixed with an underscore `_`, then new ones you add should be prefixed in the same way. Or, if methods are named using camelcase, like `thisIsMyNewMethod`, then do not diverge from that by writing `this_is_my_new_method`. You get the idea. If in doubt, please ask or search the codebase for something similar.
 
-We use [pre-commit](https://pre-commit.com/) to validate the style of the code along with maintainer review. If you'd like to check that your code matches our style please run and/or install our [pre-commit](https://github.com/doitintl/kube-no-trouble/blob/master/.pre-commit-config.yaml). Branches with commits which do not pass the pre-commit will not be accepted.
+We use [pre-commit](https://pre-commit.com/) to validate the style of the code along with maintainer review. If you'd like to check that your code matches our style please run and/or install our [pre-commit](https://github.com/dark0dave/kube-no-trouble/blob/master/.pre-commit-config.yaml). Branches with commits which do not pass the pre-commit will not be accepted.
 
 ```
 pip install pre-commit
@@ -145,9 +145,9 @@ pre-commit run --all-files
 ### Changelog
 
 Changelog is generated automatically based on merged PRs using
-[git-cliff](https://git-cliff.org/). Template can be found in [cliff.toml](https://github.com/doitintl/kube-no-trouble/blob/master/cliff.toml).
+[git-cliff](https://git-cliff.org/). Template can be found in [cliff.toml](https://github.com/dark0dave/kube-no-trouble/blob/master/cliff.toml).
 
-PRs are categorized based on their conventional commit groups, into following sections, as seen in [git cliff toml file line 62](https://github.com/doitintl/kube-no-trouble/blob/master/cliff.toml#L62):
+PRs are categorized based on their conventional commit groups, into following sections, as seen in [git cliff toml file line 62](https://github.com/dark0dave/kube-no-trouble/blob/master/cliff.toml#L62):
 - Features - group **feat** - A new feature
 - Fixes - group **fix** - A bug fix
 - Internal/Other - groups **chore** **build** **ci** **build** **dep**  **docs** **ref** **style** **test** - all other changes
@@ -155,7 +155,7 @@ PRs are categorized based on their conventional commit groups, into following se
 Additionally we will reference any new contributors between the release versions. See an example release note below:
 
 ```md
-#### Docker Image: ghcr.io/doitintl/kube-no-trouble:latest
+#### Docker Image: ghcr.io/dark0dave/kube-no-trouble:latest
 
 ## Changelog
 
@@ -212,7 +212,7 @@ Nightly release happen on weekly schedule, this important for good health of the
 
 #### When to release
 
-We create [milestones](https://github.com/doitintl/kube-no-trouble/milestones) in the github repo which guide us towards minor releases, such as 0.7.0 or 0.6.0. @stepanstipl the creator of this repo has always avoided releasing 1.0.0 because that would lock our existing functionality in. Currently there are large outstanding issue which prevent us from having a stable API, ie version 1.0.0. This is in line with the semver doc see [here](https://semver.org/#how-do-i-know-when-to-release-100).
+We create [milestones](https://github.com/dark0dave/kube-no-trouble/milestones) in the github repo which guide us towards minor releases, such as 0.7.0 or 0.6.0. @stepanstipl the creator of this repo has always avoided releasing 1.0.0 because that would lock our existing functionality in. Currently there are large outstanding issue which prevent us from having a stable API, ie version 1.0.0. This is in line with the semver doc see [here](https://semver.org/#how-do-i-know-when-to-release-100).
 
 All that to say, our patches tend to be a mixture of small features and bugfixes. Example:
 

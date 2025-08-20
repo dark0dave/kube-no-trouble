@@ -3,9 +3,9 @@ package test
 import (
 	"testing"
 
-	"github.com/doitintl/kube-no-trouble/pkg/collector"
-	"github.com/doitintl/kube-no-trouble/pkg/judge"
-	"github.com/doitintl/kube-no-trouble/pkg/rules"
+	"github.com/dark0dave/kube-no-trouble/pkg/collector"
+	"github.com/dark0dave/kube-no-trouble/pkg/judge"
+	"github.com/dark0dave/kube-no-trouble/pkg/rules"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
