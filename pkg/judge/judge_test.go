@@ -1,7 +1,7 @@
 package judge
 
 import (
-	"github.com/doitintl/kube-no-trouble/test"
+	"github.com/dark0dave/kube-no-trouble/test"
 )
 
 func init() {

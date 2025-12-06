@@ -39,6 +39,6 @@ jobs:
           TAG: "nightly-${{ steps.git_tag.outputs.tag }}"
         run: |
           git tag "${TAG}"
-          git remote set-url origin git@github.com:doitintl/kube-no-trouble.git
+          git remote set-url origin git@github.com:dark0dave/kube-no-trouble.git
           git push origin "refs/tags/${TAG}"
         if: ${{ steps.tag_exists.outputs.result != 'true' }}

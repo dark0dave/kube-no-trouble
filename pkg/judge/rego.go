@@ -3,7 +3,7 @@ package judge
 import (
 	"context"
 
-	"github.com/doitintl/kube-no-trouble/pkg/rules"
+	"github.com/dark0dave/kube-no-trouble/pkg/rules"
 	"github.com/open-policy-agent/opa/rego"
 	"github.com/rs/zerolog/log"
 )
