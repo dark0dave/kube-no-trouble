@@ -1,11 +1,6 @@
 name: main
 on:
   push:
-    branches:
-    - master
-    tags:
-    - "*"
-  pull_request:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
