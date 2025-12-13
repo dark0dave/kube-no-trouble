@@ -18,3 +18,9 @@ fmtcoverage.html
 
 # changelog
 changelog.md
+
+# nix files
+.direnv
+
+# go
+.go
