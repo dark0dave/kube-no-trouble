@@ -20,4 +20,10 @@ fmtcoverage.html
 changelog.md
 
 # Bin
-./kubent
+kubent
+
+# nix files
+.direnv
+
+# go
+.go
